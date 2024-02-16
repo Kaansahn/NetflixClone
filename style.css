@@ -1,0 +1,237 @@
+:root {
+  --main-bg-color: #141414;
+  --main-text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--main-text-color);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: auto;
+  z-index: 2;
+}
+
+.header-container {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: relative;
+}
+
+.header-primary-navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.header-primary-navigation .netflix-logo img {
+  height: 30px;
+}
+
+.header-secondary-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  gap: 15px;
+}
+
+.header-secondary-navigation-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.header-secondary-navigation-element .profile-icon {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.header-secondary-navigation-element i {
+  font-size: 20px !important;
+}
+
+.billboard {
+  margin-top: -68px;
+  height: 100vh;
+  position: relative;
+  background: url("https://occ-0-7290-1432.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWTjAWDdV6aTSH4otLdQEiCNtEzhy6uMiGLELPCt9iRfUU997DpyXPusOQx2iw4VMjkNvb1gbjTlKJVMzrnxYoDcLoomMw5v57RD.webp?r=cbf");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.billboard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.billboard-content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
+.billboard-content-info .billboard-content-header {
+  height: auto;
+  width: 100%;
+}
+
+.billboard-content-info .billboard-content-p {
+  width: 100%;
+  text-wrap: wrap;
+  font-size: 20px !important;
+}
+
+.billboard-content-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.billboard-button {
+  background-color: orange;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px !important;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.billboard-button i {
+  font-size: 25px !important;
+}
+
+.billboard-content-buttons .play-button {
+  background-color: #fff;
+  color: var(--main-bg-color);
+}
+
+.billboard-content-buttons .more-info-button {
+  background-color: rgba(109, 109, 110, 0.7);
+}
+
+.more-info-button .info-icon {
+  height: 25px;
+}
+
+.billboard-restriction {
+  position: relative;
+  top: 65%;
+  float: right;
+  z-index: 2;
+  border-left: 3px solid #dcdcdc;
+  background: rgba(51, 51, 51, 0.6);
+  padding: 12px 60px 15px 12px;
+}
+
+.content-rows {
+  margin-left: 50px;
+  margin-top: -60px;
+  bottom: 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.row h1 {
+  font-size: 18px !important;
+  margin-bottom: 5px;
+}
+
+.row-elements {
+  display: flex;
+  gap: 10px;
+  height: 130px;
+  width: 100%;
+}
+
+.row-element {
+  height: 100%;
+}
+
+.row-element img {
+  height: 92%;
+  width: auto;
+  border-radius: 5px;
+}
+
+.row-element .line {
+  margin: 0 30px;
+  height: 2px;
+  background: linear-gradient(to right, red 50%, rgba(109, 109, 110) 50%);
+}
+
+.slider-arrow {
+  opacity: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 36.9%;
+  right: 0;
+  padding: 0 10px;
+  background-color: grey;
+}
+
+.slider-arrow:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.slider-arrow i {
+  font-size: 50px !important;
+}
